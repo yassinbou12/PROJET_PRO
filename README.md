@@ -1,40 +1,42 @@
-# PROJET_PRO
-# 🏛️ Association Management System & Coopargan POS
+# 🏛️ Association & Stadium Management System
 
-Une plateforme web intégrée pour la gestion administrative d'une association et le suivi commercial de sa coopérative (**Copargan**). Ce projet permet de digitaliser le suivi des membres, la participation aux activités et la vente de produits bio.
+Une plateforme web intégrée conçue pour la gestion administrative d'une association et la gestion automatisée des réservations d'un stade ou complexe sportif. Ce projet digitalise le suivi des membres, la participation aux activités et la planification des matchs.
 
 ---
 
 ## 🌟 Fonctionnalités Principales
 
 ### 👤 Gestion des Membres & Administration
-- **Système d'Authentification :** Accès sécurisé pour l'Admin et les membres du bureau (Président, Secrétaire, etc.).
-- **Dashboard Statistique :** Visualisation en temps réel des indicateurs clés (KPIs).
-- **Suivi de Participation :** Interface dynamique pour marquer la présence/absence aux réunions et activités.
-- **Calcul Automatique :** Génération du taux de participation mensuel et annuel par membre.
+- **Système d'Authentification :** Accès sécurisé multi-rôles (Admin, Bureau, Membre, Client).
+- **Dashboard Statistique :** Visualisation en temps réel des indicateurs de performance (KPIs).
+- **Suivi de Participation :** Interface dynamique pour marquer la présence/absence aux réunions et activités associatives.
+- **Calcul Automatique :** Génération des taux de participation mensuels et annuels.
 
-### 🍯 Module Coopérative (Copargan)
-- **Gestion de Stock :** Suivi des produits bio (Huile d'Argan, Amlou, Miel).
-- **Point de Vente (POS) :** Interface simplifiée pour enregistrer les ventes quotidiennes.
-- **Reporting Financier :** Calcul automatique du chiffre d'affaires et intégration dans les bilans de l'association.
+### ⚽ Module de Réservation de Stade (Stadium Booking)
+- **Planning Interactif :** Calendrier en temps réel pour visualiser les créneaux disponibles et réservés.
+- **Gestion des Matchs :** Système de réservation pour les utilisateurs (particuliers ou clubs).
+- **Tarification Dynamique :** Gestion des prix selon les créneaux (Heures pleines/creuses, éclairage nocturne).
+- **Suivi des Revenus :** Reporting sur les recettes générées par les locations du terrain.
 
 ---
 
 ## 📊 Aperçu des Indicateurs (KPIs)
-L'application remplace les fichiers Excel complexes par des graphiques interactifs :
-- **Taux de participation cible :** 80%.
-- **Suivi budgétaire :** Coûts directs et indirects par activité.
-- **Impact social :** Nombre total de bénéficiaires cumulés.
+L'application centralise les données pour une prise de décision rapide :
+- **Engagement des membres :** Taux de participation cible de 80%.
+- **Taux d'occupation :** Analyse de l'utilisation du stade par semaine/mois.
+- **Suivi budgétaire :** Équilibre entre les coûts des activités et les revenus des réservations.
+- **Impact social :** Nombre de bénéficiaires et de sportifs enregistrés.
 
 ---
 
 ## 🛠️ Stack Technique
 
-- **Frontend :** React.js / Tailwind CSS (Interface réactive et moderne).
-- **Backend :** Spring Boot (Java 17) / Hibernate.
+- **Frontend :** React.js / Tailwind CSS (Interface moderne et Responsive).
+- **Backend :** Spring Boot (Java 17) / Hibernate (Architecture REST).
 - **Base de données :** MySQL / PostgreSQL.
-- **Sécurité :** Spring Security & JWT.
-- **Charts :** Chart.js ou Recharts pour les graphiques de performance.
+- **Sécurité :** Spring Security & JWT (Authentification sécurisée).
+- **Planning :** FullCalendar ou librairie personnalisée pour la grille horaire.
+- **Charts :** Chart.js ou Recharts pour les statistiques.
 
 ---
 
@@ -45,7 +47,8 @@ L'application remplace les fichiers Excel complexes par des graphiques interacti
 - Node.js & NPM
 - MySQL
 
-
-
-
-
+### 2. Backend (Spring Boot)
+```bash
+# Configurer la DB dans src/main/resources/application.properties
+./mvnw clean install
+./mvnw spring-boot:run
